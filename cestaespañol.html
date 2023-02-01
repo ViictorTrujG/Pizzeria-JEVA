@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria_Jeva</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./cesta.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="botones" class="cabecera">
+              <li id="botonlogo">
+                <a href="./indexespañol.html">
+                    <img id="logo" src="./icons/logoprincipal.png"></img>
+                    <!-- <img id="logo" src="./icons/pizzeria-jeva-high-resolution-logo-white-on-black-background.svg"></img> NUESTRA IMAGEN EN FORMATO SVG NO FUNCIONA-->
+                </a>
+              </li>
+              <li class="botonesprincipales"><a id="tituloPizzasNuestraCarta" href = "./menuespañol.html">NUESTRA CARTA</a></li>
+              <li class="botonesprincipales"><a id="tituloRestaurantes" href = "./mapa.html">RESTAURANTES</a></li>       
+              <li class="botonesprincipales"><a id="tituloIdioma" href = "">CONTACTO</a></li>
+              <li class="botonesidioma">
+                <a onclick="changeLanguage('es')" href=""><img id="Español" src="./icons/idiomaespañol.png"></img> </a>
+                <a onclick="changeLanguage('en')" href=""><img id="English" src="./icons/idiomaingles.png"></img> </a>
+                <a onclick="changeLanguage('ca')" href=""><img id="Català" src="./icons/idiomacatalan.png"></img> </a>
+              </li> 
+              <li class="botonessecundarios">
+                <a href="./cestaespañol.html"><img id="IniciarPedido" src="./icons/carrito.png"></img> </a>
+              </li>        
+              <li>
+                <a href="./profile.html">
+                  <img id="IniciarSesion" src="icons/botonprofile.png"></img>
+                </a>
+              </li>   
+            </ul>
+        </nav>
+    </header>
+       
+      <main>
+            <section id="menu">
+              <table>
+                <tr>
+                  <th>Producto</th>
+                  <th>Precio</th>
+                  <th>Agregar</th>
+                </tr>
+                <tr>
+                  <td><img src="./icons/TonyPepperoni.png" alt="Product 1"></td>
+                  <td>$5.99</td>
+                  <td>
+                    <form>
+                      <label for="product1">Cantidad:</label>
+                      <input type="number" id="product1" name="product1">
+                      <input type="submit" value="Agregar">
+                    </form>
+                  </td>
+              </tr>
+              <tr>
+                <td><img src="./icons/Barbacoa.png" alt="Product 2"></td>
+                <td>$3.50</td>
+                <td>
+                  <form>
+                    <label for="product2">Cantidad:</label>
+                    <input type="number" id="product2" name="product2">
+                    <input type="submit" value="Agregar">
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="./icons/CuatroQuesos.png" alt="Product 3"></td>
+                <td>$7.99</td>
+                <td>
+                  <form>
+                    <label for="product3">Cantidad:</label>
+                    <input type="number" id="product3" name="product3">
+                    <input type="submit" value="Agregar">
+                  </form>
+                </td>
+              </tr>
+            </table>
+          </section>
+          <section id="cart">
+            <h2 class="cesta">CESTA</h2>
+            <table>
+              <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Total</th>
+              </tr>
+              <tr class="Product1">
+                <td>Product 1</td>
+                <td>
+                  <form>
+                    <input type="number" id="product1-qty" name="product1-qty">
+                    <input type="submit" value="Actualizar">
+                  </form>
+                </td>
+                <td>$5.99</td>
+                <td>$0.00</td>
+              </tr>
+              <tr class="Product2">
+                <td>Product 2</td>
+                <td>
+                  <form>
+                    <input type="number" id="product2-qty" name="product2-qty">
+                    <input type="submit" value="Actualizar">
+                  </form>
+                </td>
+                <td>$3.50</td>
+                <td>$0.00</td>
+              </tr>
+              <tr class="Product3">
+                <td>Product 3</td>
+                <td>
+                  <form>
+                    <input type="number" id="product3-qty" name="product3-qty">
+                    <input type="submit" value="Actualizar">
+                  </form>
+                </td>
+                <td>$7.99</td>
+                <td>$0.00</td>
+              </tr>
+              <tr>
+                <td colspan="3">Total</td>
+                <td>$0.00</td>
+              </tr>
+            </table>
+            <form>
+              <input type="submit" value="Proceder al Pago">
+            </form>
+          </section>
+        </main>
+
+    <footer id="footer">
+        <div class="columnasfooter">
+            <h1 id="columna1">Productos</h1>
+                <ol>
+                  <li id="t_ofertas">Ofertas</li>
+                  <li id="t_menus">Menús</li>
+                  <li id="t_pizzas">Pizzas</li>
+                  <li id="t_entrantes">Entrantes</li>
+                  <li id="t_bebidas">Bebidas</li>
+                  <li id="t_postres">Postres</li>
+                </ol>
+        </div>
+      
+        <div class="columnasfooter">
+            <h1 id="columna2">Nutrición y Calidad</h1>
+                <ol>
+                    <li id="t_calidad">Calidad y Alimentación</li>
+                    <li id="t_listado">Listado de alérgenos</li>
+                    <li id="t_valores">Valores nutricionales</li>
+                    <li id="t_tiendas">Tiendas para celíacos</li>
+                    <li id="t_masas">Nuestras masas</li>
+                    <li id="t_pizzasingluten">Pizzas sin gluten</li>
+                    <li id="t_pizzasgourmet">Pizzas Gourmet</li>
+                </ol>    
+        </div>
+      
+        <div class="columnasfooter">
+            <h1 id="columna3"> Corporativo</h1>
+                <ol>
+                    <li id="t_acerca">Acerca de Pizzeria JEVA</li>
+                    <li id="t_trabajaconnosotros">Trabaja con nosotros</li>
+                    <li id="t_franquicia">Franquíciate</li>
+                </ol>
+          
+        </div>
+  
+        <div class="columnasfooter">
+            <h1 id="columna4"> Aviso legal</h1>
+                <ol>
+                    <li id="t_condicionesgenerales">Condiciones generales</li>
+                    <li id="t_politicaprivacidad">Política de privacidad</li>
+                    <li id="t_politicacookies">Política de cookies</li>
+                    <li id="t_condicionespromocionales">Condiciones promocionales</li>
+                    <li id="t_prevencion">Prevención Fraude Electrónico</li>
+                </ol>
+        </div>
+  
+        <div class="columnasfooter">
+            <h1 id="columna5">Ayuda</h1>
+                <ol>
+                    <li id="t_localizador">Localizador pizzerías</li>
+                    <li id="t_contacto">Contacto</li>
+                    <li id="t_preguntasfrecuentes">Preguntas frecuentes</li>
+                    <li id="t_covid">COVID-19</li>
+                </ol>
+        </div>
+    </footer>
+</body>      
+</html>

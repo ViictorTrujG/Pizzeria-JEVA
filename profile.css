@@ -325,7 +325,7 @@
         justify-content: center;
         text-align: center;
         border-radius: 5px;
-        margin-top: 70px;
+        margin-bottom: 70px;
     }
     .input-bar {
         border: 1px solid rgb(58, 55, 55);
@@ -375,7 +375,7 @@
         margin: auto;
         margin-top: 30px;
         padding-top: 16px;
-        border: 1PX solid rgb(58, 55, 55);
+        border: 1px solid rgb(58, 55, 55);
         text-decoration: none;
         color: white;
         font-size: 15px;
@@ -435,30 +435,34 @@
         color: white;
     }
 
-    .idioma {
-        display: inline-block;
-        position: relative;
-      }
-      .botonesidioma {
-        display: none;
-        position: absolute;
-        width: 100%;
-        overflow: auto;
-        box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-      }
-      .idioma:hover .dropdown-content {
-        display: block;
-      }
-      .botonesidioma a {
-        display: block;
-        color: #000000;
-        padding: 5px;
-        text-decoration: none;
-      }
-      .botonesidioma a:hover {
-        color: #FFFFFF;
-        background-color: #00A4BD;
-      }
+    .Idioma {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    #Català {
+        width: 40px;
+        height: 30px;
+        padding-top: 100px;
+        margin-left: 30px;
+    }
+
+    #Español {
+        width: 40px;
+        height: 30px;
+        padding-top: 100px;
+        margin-right: 30px;
+    }
+
+    #English {
+        width: 40px;
+        height: 30px;
+        padding-top: 100px;
+        
+    }
+
 }
 
 

@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria JEVA</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./profile.css">
-    <title>Pizzeria JEVA</title>
+    <script src="./js/profile.js" defer></script> 
 </head>
+
 <body>
-    <div class="Idioma">   
-        <label class="barra">
-            <select value="Idioma">
-                <option value="English">English</option>
-                <option value="Español">Español</option>
-                <option value="Català">Català</option>
-            </select>
-        </label>
+    <div class="Idioma">  
+        <a onclick="changeLanguage('es')" href=""><img id="Español" src="./icons/idiomaespañol.png"></img> </a>
+        <a onclick="changeLanguage('en')" href=""><img id="English" src="./icons/idiomaingles.png"></img> </a>
+        <a onclick="changeLanguage('ca')" href=""><img id="Català" src="./icons/idiomacatalan.png"></img> </a>
     </div>
+    
     <div id="centered-box">
         <div class="barras">
+            <a href="./indexespañol.html">
             <img class="logoiniciosesion" src="./icons/profilelogo.png" alt="logoiniciosesion">
+            </a>
             <input id="barrausuario" type="text" placeholder="Direccion de correo electronico" class="input-bar" required>
             <input id="barrapassword" type="text" placeholder="Contraseña" class="input-bar" required>
             <label id="checkbox"><input type="checkbox" id="cbox1" value="first_checkbox"> Recordarme</label>        
             <a id="recuperarcontraseña" href="https://www.google.es/">Recuperar Contraseña</a> 
-            <a id="ENTRAR" href="https://www.youtube.com/watch?v=mCdA4bJAGGk&ab_channel=sweetblue.">ENTRAR</a>   
+            <a id="ENTRAR" href="./indexespañol.html">ENTRAR</a>   
             <p id="aunnotienescuenta">¿Aún no tienes cuenta?</p>
-            <a id="registrate" href="https://www.google.es/">Regístrate</a>
+            <a id="registrate" href="./profile.html">Regístrate</a>
             <p id="oiniciasesion">--------------------- O inicia sesión ---------------------</p>
             <a id="FACEBOOK" href="https://www.facebook.com/">FACEBOOK</a>   
             <a id="GOOGLE" href="https://www.google.es/">GOOGLE</a>   
